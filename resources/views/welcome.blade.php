@@ -38,7 +38,17 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+               <div class="title">Welcome to:</div>
+
+                <a href="#"><img src={{asset('logo/tre-uniti.png')}} alt="tre-uniti" height = "400px" width = "400px"></a>
+                <br/>
+                <br/>
+                <hr />
+                <br/>
+                <br/>
+                <a href="http://belle-idee.dev"><img src={{asset('logo/idee.png')}} alt="idee" height = "300px" width = "300px"></a>
+                <a href="http://bella-studenti.dev"><img src={{asset('logo/studenti.png')}} alt="studenti" height = "300px" width = "300px"></a>
+                <a href="http://bella-ninja.dev"><img src={{asset('logo/ninja.png')}} alt="ninja" height = "300px" width = "300px"></a>
             </div>
         </div>
     </body>
