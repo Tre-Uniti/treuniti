@@ -46,7 +46,6 @@
                 <hr />
                 <br/>
                 <br/>
-
                 <a href="http://belle-idee.org"><img src={{asset('logo/idee.png')}} alt="idee" height = "300px" width = "300px"></a>
                 <a href="http://tre-uniti.org"><img src={{asset('logo/creatori.png')}} alt="creatori" height = "300px" width = "300px"></a>
                 <a href="http://tre-uniti.org"><img src={{asset('logo/studenti.png')}} alt="studenti" height = "300px" width = "300px"></a>
