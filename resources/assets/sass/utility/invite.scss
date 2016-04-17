@@ -1,0 +1,51 @@
+#inviteOuter
+{
+  width: 30%;
+  min-width: 305px;
+  height: auto;
+  margin: 7.3% auto;
+  background-color: #E8E8E8;
+  opacity:0.75;
+  filter:alpha(opacity=75);
+  border: 2px solid;
+  border-radius: 25px;
+  text-align: center;
+}
+#inviteInner
+{
+  width: 69%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #202020;
+  filter:alpha(opacity=90);
+  border: 2px solid;
+  border-radius: 25px;
+  min-width: 297px;
+  color: white;
+  text-align: left;
+}
+
+h3
+{
+  text-align: center;
+}
+
+.welcomeLink
+{
+  color: black;
+}
+/* visited link */
+.welcomeLink:visited {
+  color: white;
+
+}
+/* mouse over link */
+.welcomeLink:hover {
+  color: #009900;
+}
+
+/* selected link */
+.welcomeLink:active {
+  color: #00CC33;
+
+}

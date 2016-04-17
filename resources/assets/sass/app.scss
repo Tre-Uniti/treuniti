@@ -1,2 +1,103 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import 'utility/siteVars';
+@import 'utility/invite';
+@import 'mixins/baseButton';
+@import 'mixins/colorButton';
+
+html{
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url($backgroundImg);
+  background-color: black;
+  font-family: "Open Sans", Arial, serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, serif;
+
+}
+
+.formData
+{
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+.createAttributes
+{
+  color: black;
+}
+
+#container {
+  text-align: center;
+  height: 100%;
+}
+
+#centerContent {
+  display: inline-block;
+  margin: 8% auto;
+  height: auto;
+  border-radius: 25px;
+  opacity: 0.80;
+  background: -webkit-linear-gradient(#FFFFFF  , #C0C0C0 );
+  background: -o-linear-gradient(#FFFFFF , #C0C0C0 );
+  background: -moz-linear-gradient(#FFFFFF , #C0C0C0 );
+  background: linear-gradient(#FFFFFF , #C0C0C0 );
+}
+
+.welcome
+{
+  margin: 0 auto;
+  padding: 15px;
+}
+
+//Errors
+.errors
+{
+  background-color: #202020;
+  opacity: .9;
+}
+.listErrors
+{
+  color: #FF0000;
+  text-align: left;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  opacity: .9;
+}
+
+/* Button specific */
+.navButton
+{
+  @include baseButton;
+  text-shadow: 3px 3px 10px #003300;
+  @include colorNavButton($navButtonColor1, $navButtonColor2, $navTextColor);
+  &:hover
+  {
+    color: $navTextHoverColor;
+    background: -webkit-linear-gradient($navHoverColor1, $navHoverColor2);
+    background: -o-linear-gradient($navHoverColor1, $navHoverColor2);
+    background: -moz-linear-gradient($navHoverColor1, $navHoverColor2);
+    background: linear-gradient($navHoverColor1, $navHoverColor2);
+  }
+}
+.interactButton
+{
+  @include baseButton;
+  @include colorActButton($actButtonColor1, $actButtonColor2, $actTextColor);
+  &:hover
+  {
+    color: $actTextHoverColor;
+    background: -webkit-linear-gradient($actHoverColor1, $actHoverColor2);
+    background: -o-linear-gradient($actHoverColor1, $actHoverColor2);
+    background: -moz-linear-gradient($actHoverColor1, $actHoverColor2);
+    background: linear-gradient($actHoverColor1, $actHoverColor2);
+  }
+}
 

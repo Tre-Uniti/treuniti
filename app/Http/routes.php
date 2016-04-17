@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', 'HomeController@welcome');
+Route::get('/about', 'HomeController@about');
+Route::get('/contact', 'HomeController@contact');
+Route::get('/creatori' , 'HomeController@creatori');
+Route::post('/creatori/invite' , 'HomeController@storeCreatoriInvite');
+Route::get('/studenti' ,'HomeController@studenti');
+Route::post('/studenti/invite' ,'HomeController@storeStudentiInvite');
+Route::get('/idee', 'HomeController@idee');
+Route::get('/thankyou', 'HomeController@thankyou');
