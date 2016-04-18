@@ -12,14 +12,14 @@
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
     <meta property="og:url"           content= "{{ Request::url() }}"/>
     <meta property="og:type"          content="website"/>
-    <meta property="og:title"         content="Belle-Idee"/>
-    <meta property="og:description"   content="A community for idea, inspiration, and belief sharing."/>
-    <meta property="og:image"         content="https://belle-idee.org/img/idee-med.png"/>
+    <meta property="og:title"         content="Tre-Uniti"/>
+    <meta property="og:description"   content="Be inspired through community."/>
+    <meta property="og:image"         content="https://tre-uniti.org/img/tre-uniti.png"/>
 @yield('pageHeader')
         <!--
        This code is maintained by the Tre-Uniti development ops
        Feature & Pull Requests decided at Belle-Creatori.org
-       Idee Repo: https://github.com/tre-uniti/belle-idee
+       Idee Repo: https://github.com/tre-uniti/tre-uniti
     -->
 </head>
 <body>
