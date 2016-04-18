@@ -23,7 +23,7 @@
             <th> {!! Form::label('email', 'Email') !!}</th>
         </tr>
         <tr>
-            <td>{!! Form::text('email', null, ['class' => 'createAttributes', 'placeholder' => 'Send invite to:']) !!}</td>
+            <td>{!! Form::text('email', null, ['class' => 'createAttributes']) !!}</td>
         </tr>
     </table>
     <div class = "createSubmit">

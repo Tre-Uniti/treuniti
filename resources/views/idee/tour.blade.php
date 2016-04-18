@@ -22,6 +22,7 @@
     </div>
 @stop
 @section('centerFooter')
+    <a href="https://belle-idee.org/auth/login"><button type = "button" class = "navButton">Login</button></a>
     <a href="https://belle-idee.org/auth/register"><button type = "button" class = "navButton">Register</button></a>
     <a href="https://belle-idee.org/demo"><button type = "button" class = "navButton">View Demo Page</button></a>
     <hr/>
