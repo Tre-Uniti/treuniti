@@ -2,6 +2,10 @@
 @import 'utility/invite';
 @import 'mixins/baseButton';
 @import 'mixins/colorButton';
+@import 'nav/nav';
+@import 'nav/topNav';
+  @include topNavColor($topNavBackgroundColor, $topNavColor, $topNavHoverBackground, $topNavHoverColor, $topNavDivBackground, $topNavDivColor, $topNavDivHoverColor, $topNavDivHoverBackground)
+
 
 html{
   height: 100%;
@@ -11,8 +15,7 @@ html{
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url($backgroundImg);
-  background-color: black;
+  background-color: #ECF0F1;
   font-family: "Open Sans", Arial, serif;
 }
 
@@ -34,27 +37,20 @@ body {
   color: black;
 }
 
-#container {
+#container
+{
   text-align: center;
   height: 100%;
+  width:100%;
+  overflow: auto;
 }
 
-#centerContent {
-  display: inline-block;
-  margin: 8% auto;
-  height: auto;
-  border-radius: 25px;
-  opacity: 0.80;
-  background: -webkit-linear-gradient(#FFFFFF  , #C0C0C0 );
-  background: -o-linear-gradient(#FFFFFF , #C0C0C0 );
-  background: -moz-linear-gradient(#FFFFFF , #C0C0C0 );
-  background: linear-gradient(#FFFFFF , #C0C0C0 );
-}
-
-.welcome
+#centerContent
 {
-  margin: 0 auto;
-  padding: 15px;
+  width: 50%;
+  height: 100%;
+  font-family: "Open Sans", Arial, serif;
+  margin: 71px auto;
 }
 
 //Errors
