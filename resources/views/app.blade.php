@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Tre-Uniti /-\ @yield('siteTitle')</title>
+    <title>@yield('siteTitle')</title>
     <link rel = "stylesheet" href = "/css/normalize.css">
     <link rel = "stylesheet" href = "{{ elixir('css/app.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -24,22 +24,59 @@
 </head>
 <body>
 <div id = "container">
-    <div id = "centerContent">
+        <nav class = "topNav">
+            <ul>
+                <li class = "navDesktopIcon"><a href={{ url('/home') }}><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li class = "navMobileIcon">
+                    <a href = "{{ url('/home') }}"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
+                <li>
+
+                <li class = "navMobileIcon">
+                    <p onclick="" class = "nav"><i class="fa fa-newspaper-o" aria-hidden="true"></i> <span class="caret"></span></p>
+                    <div>
+                        <ul>
+                            <li><a href={{ url('/posts/create') }}>Create</a></li>
+                            <li><a href={{ url('/posts') }}>Discover</a></li>
+                            <li><a href="{{ url('/drafts') }}">Drafts</a></li>
+                            <li><a href={{ url('/legacyPosts')}}>Legacies</a></li>
+                            <li><a href="{{ url('/extensions') }}">Extensions</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class = "navDesktopIcon">
+                    <p onclick="" class = "nav"> <i class="fa fa-users" aria-hidden="true"></i></p>
+                    <div>
+                        <ul>
+                            <li><a href="{{ url('/users') }}">Users</a></li>
+                            <li><a href="{{ url('/beacons') }}">Beacons</a></li>
+                            <li><a href="{{ url('/sponsors') }}">Sponsors</a></li>
+                            <li><a href="{{ url('/beliefs') }}">Beliefs</a></li>
+                            <li><a href="{{ url('/questions') }}">Questions</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class = "navMobileIcon">
+                    <p onclick="" class = "nav"> <i class="fa fa-users" aria-hidden="true"></i> <span class="caret"></span></p>
+                    <div>
+                        <ul>
+                            <li><a href="{{ url('/users') }}">Users</a></li>
+                            <li><a href="{{ url('/beacons') }}">Beacons</a></li>
+                            <li><a href="{{ url('/sponsors') }}">Sponsors</a></li>
+                            <li><a href="{{ url('/beliefs') }}">Beliefs</a></li>
+                            <li><a href="{{ url('/questions') }}">Questions</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
         <article>
-            <div id = "centerMenu">
-                <header>
-                    @include('partials.flash')
-                    @yield('centerMenu')
-                </header>
-            </div>
-            <div id = "centerText">
-                @yield('centerText')
+            <div id = "centerContent">
+                @yield('centerContent')
             </div>
         </article>
         <div id = "centerFooter">
             @yield('centerFooter')
         </div>
     </div>
-</div>
 </body>
 </html>
