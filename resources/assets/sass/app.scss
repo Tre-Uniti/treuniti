@@ -3,6 +3,7 @@
 @import 'mixins/baseButton';
 @import 'mixins/colorButton';
 @import 'nav/nav';
+@import 'nav/links';
 @import 'nav/topNav';
   @include topNavColor($topNavBackgroundColor, $topNavColor, $topNavHoverBackground, $topNavHoverColor, $topNavDivBackground, $topNavDivColor, $topNavDivHoverColor, $topNavDivHoverBackground)
 

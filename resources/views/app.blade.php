@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="description" content="Tre-Uniti - We provide web apps for communities and individuals to inspire, develop, and learn cooperatively..">
+
     <title>@yield('siteTitle')</title>
     <link rel = "stylesheet" href = "/css/normalize.css">
     <link rel = "stylesheet" href = "{{ elixir('css/app.css') }}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/9747c67e36.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
 
     <!-- You can use Open Graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
@@ -26,44 +30,55 @@
 <div id = "container">
         <nav class = "topNav">
             <ul>
-                <li class = "navDesktopIcon"><a href={{ url('/home') }}><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li class = "navDesktopIcon"><a href={{ url('/') }}><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                 <li class = "navMobileIcon">
-                    <a href = "{{ url('/home') }}"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
+                    <a href = "{{ url('/') }}"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
                 <li>
-
-                <li class = "navMobileIcon">
-                    <p onclick="" class = "nav"><i class="fa fa-newspaper-o" aria-hidden="true"></i> <span class="caret"></span></p>
+                <li class = "navDesktopIcon">
+                    <p onclick="" class = "nav"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Idee<span class="caret"></span></p>
                     <div>
                         <ul>
-                            <li><a href={{ url('/posts/create') }}>Create</a></li>
-                            <li><a href={{ url('/posts') }}>Discover</a></li>
-                            <li><a href="{{ url('/drafts') }}">Drafts</a></li>
-                            <li><a href={{ url('/legacyPosts')}}>Legacies</a></li>
-                            <li><a href="{{ url('/extensions') }}">Extensions</a></li>
+                            <li><a href="{{ url('https://belle-idee.org/about') }}" target = "_blank">About</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class = "navMobileIcon">
+                    <p onclick="" class = "nav"><i class="fa fa-lightbulb-o" aria-hidden="true"></i><span class="caret"></span></p>
+                    <div>
+                        <ul>
+                            <li><a href={{ url('/') }}>About</a></li>
                         </ul>
                     </div>
                 </li>
                 <li class = "navDesktopIcon">
-                    <p onclick="" class = "nav"> <i class="fa fa-users" aria-hidden="true"></i></p>
+                    <p onclick="" class = "nav"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Creatori<span class="caret"></span></p>
                     <div>
                         <ul>
-                            <li><a href="{{ url('/users') }}">Users</a></li>
-                            <li><a href="{{ url('/beacons') }}">Beacons</a></li>
-                            <li><a href="{{ url('/sponsors') }}">Sponsors</a></li>
-                            <li><a href="{{ url('/beliefs') }}">Beliefs</a></li>
-                            <li><a href="{{ url('/questions') }}">Questions</a></li>
+                            <li><a href={{ url('/') }}>About</a></li>
                         </ul>
                     </div>
                 </li>
                 <li class = "navMobileIcon">
-                    <p onclick="" class = "nav"> <i class="fa fa-users" aria-hidden="true"></i> <span class="caret"></span></p>
+                    <p onclick="" class = "nav"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> <span class="caret"></span></p>
                     <div>
                         <ul>
-                            <li><a href="{{ url('/users') }}">Users</a></li>
-                            <li><a href="{{ url('/beacons') }}">Beacons</a></li>
-                            <li><a href="{{ url('/sponsors') }}">Sponsors</a></li>
-                            <li><a href="{{ url('/beliefs') }}">Beliefs</a></li>
-                            <li><a href="{{ url('/questions') }}">Questions</a></li>
+                            <li><a href={{ url('/') }}>About</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class = "navDesktopIcon">
+                    <p onclick="" class = "nav"> <i class="fa fa-graduation-cap" aria-hidden="true"></i> Studenti<span class="caret"></span></p>
+                    <div>
+                        <ul>
+                            <li><a href={{ url('/') }}>About</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class = "navMobileIcon">
+                    <p onclick="" class = "nav"> <i class="fa fa-graduation-cap" aria-hidden="true"></i> <span class="caret"></span></p>
+                    <div>
+                        <ul>
+                            <li><a href={{ url('/') }}>About</a></li>
                         </ul>
                     </div>
                 </li>
