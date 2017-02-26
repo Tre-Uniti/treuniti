@@ -8,7 +8,7 @@
    <h2>Be inspired through community</h2>
     <p>We provide web apps to help people inspire, develop, and learn cooperatively.</p>
     <p>
-        <a href = "{{ url('/') }}" class = "indexLink">About Us</a>
+        <a href = "{{ url('/about') }}" class = "indexLink">About Us</a>
         <a href = "{{ url('/') }}" class = "indexLink">Contact</a>
         <a href = "{{ url('/') }}" class = "indexLink">App Status</a>
     </p>

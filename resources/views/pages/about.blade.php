@@ -3,24 +3,35 @@
     About Tre-Uniti
 @stop
 @section('centerMenu')
-    <a href="/"><img src={{secure_asset('img/tre-uniti.png')}} alt="creatori" height = "35%" width = "35%"></a>
+    <a href="/"><img src={{secure_asset('img/tre-uniti.png')}}></a>
 @stop
-@section('centerText')
+@section('centerContent')
+        <h2>About Tre-Uniti</h2>
+        <div id = "blankInner">
+<p>We are passionate about utilizing technology to enhance communities.
+The web applications we create and maintain are designed to help local and global communities collaborate and understand each other.
+Each web app itself acts as an independent online community.
+    Whenever a user from one of the online communities has a positive influence they are given the opportunity to help manage the administration of the given community.
+This results in the most experienced and influential users managing the administration and can lead to full-time employment at Tre-Uniti.</p>
+            <p>Tre-Uniti focuses on 3 areas of community to utilize technology for.</p>
+            <ul>
+                <li>
+                    <a href = "https://belle-idee.org/" target = "_blank">Belle-idee</a> for spiritual Ideas
+                </li>
+                <li>
+                    <a href = "https://tre-uniti.org/" target = "_blank">Belle-creatori</a> for creative Projects
+                </li>
+                <li>
+                    <a href = "https://tre-uniti.org/" target = "_blank">Bella-studenti</a>for collaborative Learning
+                </li>
+            </ul>
+        </div>
+        <p>
+            <a href = "{{ url('/') }}" class = "indexLink">Contact</a>
+            <a href = "{{ url('/') }}" class = "indexLink">App Status</a>
+        </p>
 
-    <div id = "inviteInner">
-        <h3>What is Tre-Uniti?</h3>
-        <ul class = "tour">
-            <li>Builder and maintainer of community web apps</li>
-            <li>Focus on local and global integration</li>
-            <li>Owned and operated by the users of the apps</li>
-            <li>Powered by Laravel & Open Source</li>
-            <li>Located: Sedro-Woolley WA USA</li>
-            <li>Current CEO: Brendan McGoffin</li>
-            <li>Founded: September 27, 2015</li>
-        </ul>
-    </div>
 @stop
 @section('centerFooter')
-    <hr/>
-    <a href={{url('/contact')}}><button type = "button" class = "interactButton">Contact Us</button></a>
+
 @stop
